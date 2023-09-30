@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+/* font-family: 'Comfortaa', cursive; */
+/* font-family: 'Ubuntu', sans-serif; */
+:root{
+    --ubuntu: 'Ubuntu', sans-serif;
+    --comforta: 'Comfortaa', cursive;
+    --anaTuruncu: #FF854D;
+}
+
+
+/* --------------- Genel Kullanım araçları --------------- */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1240px;
+    margin-left:auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.incl_Button{
+    border-style: none;
+    width: 150px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background-color: #FF854D;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    font-family: var(--ubuntu);
+    flex-shrink: 0;
+}
+
+.title_Incl h6{
+    color: #555;
+    text-align: center;
+    font-size: 18px;
+    font-family: var(--ubuntu);
+    font-weight: 400;
+    padding-top: 100px;
+    margin-bottom: 19px;
+}
+
+.title_Incl h3{
+    color: #343434;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: var(--comforta);
+    width: 675px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+/* -------------------- Header Alanı ---------------------- */
+
+.top_Header{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    flex-shrink: 0;
+    top: 0;
+    position: sticky;
+}
+
+
+
+.navIncl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navList{
+    display: flex;
+    align-items: center;
+}
+
+.navUl{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-right: 44px;
+}
+
+.navUl li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--ubuntu);
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+}
+
+/*  --------------------- İlk Section ---------------------- */
+
+.first_Section{
+    width: 100%;
+    height: 700px;
+    background-image: url(/images/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    min-width: 1440px;
+}
+
+.fsIncl{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fsLeftSide{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 350px;
+    height: 450px;
+    background: white;
+    padding: 40px 35px 40px;
+    border-radius: 20px;
+}
+
+.fsls_Title{
+    text-align: center;
+    font-family: var(--comforta)
+}
+
+.fsLeftSide input, .fsLeftSide .incl_Button{
+    width: 280px;
+    height: 40px;
+}
+
+.fsLeftSide input{
+    padding: 10px 20px;
+    font-family: var(--ubuntu);
+}
+
+
+.fsRightSide{
+    width: 585px;
+    color: #fff;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.fsrs_Title{
+    font-family: var(--comforta);
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 32px;
+}
+
+.fsrs_incl_text{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.fsrs_img{
+    width: 50px;
+    height: 57px;
+    flex-shrink: 0;
+    margin-right: 30px;
+}
+
+.fsrs_text h5{
+    font-family: var(--comforta);
+    font-size: 20px;
+    font-weight: 70;
+}
+
+.fsrs_text p{
+    width: 426px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    font-family: var(--ubuntu);
+}
+
+/* ------------------------- Turuncu alan ------------------------ */
+
+.second_Section{
+    background-color: #FF854D;
+}
+
+.orangeArea{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.orangeArea img{
+    width: 150px;
+    height: 125px;
+    flex-shrink: 0;
+    
+}
+
+
+/* ---------------------- Kullanıcı yorumları alanı --------------------- */
+
+.third_Section{
+    width: 100%;
+    height: 740px;
+    flex-shrink: 0;
+    background-color: #f2f2f2;
+}
+
+.commentIncl{
+    height: 100%;
+}
+
+
+.comments{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.commentText{
+    width: 340px;
+    height: 320px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.10);
+}
+
+.commentText img{
+    padding-top: 30px;
+    padding-bottom: 17px;
+}
+
+.commentText p{
+    font-family: var(--ubuntu);
+    padding: 0px 32px;
+    line-height: 26px;
+    font-style: italic;
+    color: #555;
+    font-size: 18px;
+    text-align: center;
+}
+
+.peopleName{
+    padding: 22px 0px 9px !important;
+    color: #FF854D !important;
+    font-style: normal !important;
+    font-weight: 500;
+    line-height: normal !important;
+}
+
+.peopleJob{
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+}
+
+/* -------------------- Dar alan foto kısmı -------------------- */
+
+.fourth_Section{
+    width: 100%;
+    height: 150px;
+    flex-shrink: 0;
+    background-image: url(/images/background2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.fourSIncl{
+    display: flex;
+    height: 100%;
+    padding: 0px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fourSTitle h3{
+    color: var(--White, #FFF);
+font-family: var(--comforta);
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+/* ------------------ Ev içini tanıtan alan ---------------------- */
+
+.fifth_Section{
+    width: 100%;
+    height: 2650px;
+    flex-shrink: 0;
+}
+
+.whatWeDoIncl{
+    width: 100%;
+}
+
+.listAndImg{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+
+.listAndImg .listSide h3{
+    color: #000;
+    font-family: var(--comforta);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 33px;
+}
+
+
+.listAndImg .listSide ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.listAndImg .listSide ul li{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.listAndImg .listSide ul li img{
+    margin-right: 10px;
+}
+
+.margin_80{
+    margin-right: 80px;
+}
+
+
+/* ------------------------ Reason bölümü -------------------- */
+
+.sixth_Section{
+    width: 100%;
+    height: 630px;
+    flex-shrink: 0;
+    background-color: #f2f2f2;
+}
+
+.title_Incl h4{
+    color: #555;
+    text-align: center;
+    font-family: var(--ubuntu);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 717px;
+    margin: auto;
+    
+}
+
+.sixth_Section .container .title_Incl h3{
+    margin-bottom: 12px;
+}
+
+.reasonTripleIncl{
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reasonTriple{
+    width: 360px;
+    height: 190px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.10);
+    position: relative;
+    padding-left: 30px;
+    padding-top: 51px;
+}
+
+.reasonTripleOrange{
+    position: absolute;
+    border-radius: 5px;
+    background-color: #FF854D;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -30px;
+    left: 30px;
+}
+
+.reasonTriple .reasonTextIncl h3{
+    color: #000;
+font-family: var(--comforta);
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 10px;
+}
+
+.reasonTriple .reasonTextIncl p{
+    color: #555;
+    font-family: var(--ubuntu);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    padding-right: 30px;
+}
+
+
+
+/* -------------------- honesty turuncu alan --------------------- */
+
+.seventh_Section{
+    width: 100%;
+    height: 170px;
+    flex-shrink: 0;
+    background-color: var(--anaTuruncu);
+}
+
+.orangeAreaTwo{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    justify-content: center;
+    align-items: center;
+}
+
+.orangeAreaTwo h3{
+    color: #FFF;
+    font-family: var(--comforta);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.orangeAreaTwo p{
+    color:#FFF;
+    font-family: var(--ubuntu);
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* -------------------- Temizlik fotoları alanı ----------------------  */
+
+.cleanerIncl{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cleanerText h3{
+    color: #FF854D;
+    font-family: var(--comforta);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 128.571% */
+    width: 513px;
+    margin-bottom: 10px;
+}
+
+.cleanerText p{
+    color: #555;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px; /* 144.444% */
+    margin-bottom: 22px;
+    width: 563px;
+}
+
+.eighth_Section .container .cleanerIncl .cleanerText button{
+    width: 200px;
+height: 40px;
+flex-shrink: 0;
+}
+
+/* ------------------------ Soru alanı ------------------------- */
+
+.ninth_Section{
+    width: 100%;
+height: 800px;
+flex-shrink: 0;
+}
+
+.ninth_Section .container .questionIncl .title_Incl h3{
+    width: 806px;
+}
+
+.fourQuestionIncl{
+    display: flex;
+    justify-content: space-between;
+}
+
+.twoQuestion{
+    display: flex;
+    gap: 58px;
+    flex-direction: column;
+    
+}
+
+.oneQuestion{
+    width: 528px;
+}
+
+.starIncl{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.fourQuestionIncl .twoQuestion .oneQuestion .starIncl span{
+    color: var(--anaTuruncu);
+font-family: var(--ubuntu);
+font-size: 48px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.fourQuestionIncl .twoQuestion .oneQuestion h4{
+    color: #2E2E2E;
+font-family: var(--comforta);
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.fourQuestionIncl .twoQuestion .oneQuestion p{
+    color: #555;
+font-family: var(--ubuntu);
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: 26px; /* 144.444% */
+}
+
+
+/* --------------------------- kadın arkaplan alanı ------------------------- */
+
+.tenth_Section{
+    width: 100%;
+    height: 290px;
+    flex-shrink: 0;
+    background-image: url(/images/women.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.womenIncl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding-top: 50px;
+}
+
+.womenIncl h3{
+    color: var(--White, #FFF);
+font-family: var(--comforta);
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.womenIncl p{
+    color: var(--White, #FFF);
+font-family: var(--ubuntu);
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.womenIncl button{
+    width: 250px;
+height: 40px;
+flex-shrink: 0;
+}
+
+/* -------------------------- Contact us alanı ---------------------------- */
+
+.eleventh_Section{
+    width: 100%;
+height: 610px;
+flex-shrink: 0;
+background-color: #fff;
+}
+
+.contactIncl .title_Incl h3{
+    width: 682px;
+}
+
+.supportArea{
+    display: flex;
+    gap: 60px;
+}
+
+.supportItem{
+    width: 270px;
+height: 180px;
+flex-shrink: 0;
+border-radius: 15px;
+background-color:  #FFF;
+box-shadow: 5px 9px 50px 5px rgba(0, 0, 0, 0.10);
+display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 20px; */
+    justify-content: space-evenly;
+}
+
+.supportItem h5{
+    color: #343434;
+font-family: var(--comforta);
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.supportItem p{
+    color: #555;
+    font-family: var(--ubuntu);
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+/* ------------------------ Harita alanı ---------------------- */
+
+.twelfth_Section{
+    width: 100%;
+    height: 340px;
+    flex-shrink: 0;
+    background-image: url(/images/Mapsicle\ Map.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ------------------------ Footer --------------------------- */
+
+.first_Footer{
+    width: 100%;
+height: 395px;
+flex-shrink: 0;
+background-color: #343434;
+}
+
+.footerIncl{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerItemBig{
+    width: 320px;
+}
+
+.footerItem{ 
+    height: 200px;
+}
+
+.footerItem p{
+    color: #999;
+font-family: var(--ubuntu);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
+
+.footerItem h3{
+    color: #FFF;
+font-family: var(--comforta);
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 25px;
+}
+
+.socialMediaIncl{
+    display: flex;
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.socialItemTwitter{
+    display: flex;
+    align-items: center;
+}
+
+.footerIncl li{
+    list-style-type: none;
+    color: #999;
+font-family: var(--ubuntu);
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 14px;
+}
+
+.footerItemOne{
+    margin-bottom: 13px;
+    margin-top: -15px;
+}
+
+.footerItemFour img{
+    margin-right: 17px;
+    margin-bottom: 20px;
+}
